@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Title Generator - Free Online SEO Title Generator Tool</title>
+    <meta name="description" content="Generate SEO-optimized meta titles instantly with our free online tool. Perfect for content creators, marketers, and SEO professionals. Improve your search rankings today!">
+    <meta name="keywords" content="meta title generator, SEO title generator, page title generator, SEO tool, meta tags, search engine optimization">
+    <meta name="author" content="SEO Tools Pro">
+    <link rel="canonical" href="https://example.com/meta-title-generator">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Meta Title Generator - Free Online SEO Title Generator Tool">
+    <meta property="og:description" content="Generate SEO-optimized meta titles instantly with our free online tool. Perfect for content creators, marketers, and SEO professionals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/meta-title-generator">
+    <meta property="og:image" content="https://example.com/images/meta-title-generator.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Meta Title Generator - Free Online SEO Title Generator Tool">
+    <meta name="twitter:description" content="Generate SEO-optimized meta titles instantly with our free online tool. Perfect for content creators, marketers, and SEO professionals.">
+    <meta name="twitter:image" content="https://example.com/images/meta-title-generator.jpg">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Meta Title Generator",
+        "description": "Free online tool to generate SEO-optimized meta titles for websites and content",
+        "url": "https://example.com/meta-title-generator",
+        "applicationCategory": "SEO Tool",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "creator": {
+            "@type": "Organization",
+            "name": "SEO Tools Pro"
+        }
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is a meta title?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A meta title is an HTML element that specifies the title of a web page. It appears in search engine results as the clickable headline and in browser tabs."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long should a meta title be?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Meta titles should be between 50-60 characters to ensure they display properly in search results without being truncated."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What makes a good meta title?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A good meta title includes your target keyword, is descriptive, compelling, stays within character limits, and accurately represents your page content."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#2563eb',
+                        'secondary': '#64748b'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .fade-in {
+            animation: fadeIn 0.3s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .character-counter {
+            transition: color 0.3s ease;
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <!-- Header with Dark Mode Toggle -->
+    <header class="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-primary">SEO Tools Pro</h1>
+            <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors" aria-label="Toggle dark mode">
+                <i class="fas fa-moon dark:hidden"></i>
+                <i class="fas fa-sun hidden dark:inline"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Page Title and Description -->
+        <section class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
+                Meta Title Generator - Free Online SEO Title Generator
+            </h1>
+            <p class="text-xl text-gray-600 dark:text-gray-300 mb-4 max-w-3xl mx-auto">
+                Create compelling, SEO-optimized meta titles that boost your search rankings and click-through rates. Our free tool helps content creators and marketers craft perfect page titles in seconds.
+            </p>
+            <div class="flex justify-center items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
+                <span class="flex items-center gap-1">
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    100% Free
+                </span>
+                <span class="flex items-center gap-1">
+                    <i class="fas fa-bolt text-yellow-500"></i>
+                    Instant Results
+                </span>
+                <span class="flex items-center gap-1">
+                    <i class="fas fa-mobile-alt text-blue-500"></i>
+                    Mobile Friendly
+                </span>
+            </div>
+        </section>
+
+        <!-- Meta Title Generator Tool -->
+        <section class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-12" id="meta-title-tool">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Input Section -->
+                <div>
+                    <h2 class="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">Generate Your Meta Title</h2>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label for="keyword" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Primary Keyword *
+                            </label>
+                            <input 
+                                type="text" 
+                                id="keyword" 
+                                placeholder="e.g., best pizza recipe"
+                                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-white"
+                                aria-describedby="keyword-help"
+                            >
+                            <p id="keyword-help" class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                                Enter your main target keyword
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <label for="description" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Page Description
+                            </label>
+                            <textarea 
+                                id="description" 
+                                rows="3"
+                                placeholder="Briefly describe what your page is about..."
+                                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-white"
+                            ></textarea>
+                        </div>
+                        
+                        <div>
+                            <label for="brand" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Brand/Site Name
+                            </label>
+                            <input 
+                                type="text" 
+                                id="brand" 
+                                placeholder="e.g., YourBrand"
+                                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-white"
+                            >
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <button 
+                                id="generateBtn" 
+                                class="flex-1 bg-primary hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                                aria-describedby="generate-help"
+                            >
+                                <i class="fas fa-magic"></i>
+                                Generate Titles
+                            </button>
+                            <button 
+                                id="clearBtn" 
+                                class="px-4 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+                                aria-label="Clear all fields"
+                            >
+                                <i class="fas fa-eraser"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Results Section -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">Generated Meta Titles</h3>
+                    <div id="results" class="space-y-4">
+                        <div class="text-center text-gray-500 dark:text-gray-400 py-8">
+                            <i class="fas fa-lightbulb text-4xl mb-4 text-yellow-500"></i>
+                            <p>Enter your keyword above to generate optimized meta titles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Usage Counter -->
+            <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700 text-center">
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                    <i class="fas fa-chart-line mr-1"></i>
+                    <span id="usageCounter">0</span> titles generated today
+                </p>
+            </div>
+        </section>
+
+        <!-- How to Use Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-8 text-gray-900 dark:text-white">How to Use the Meta Title Generator</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">1. Enter Your Keyword</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Input your primary keyword or phrase that you want to target for SEO.
+                    </p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">2. Add Description</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Provide a brief description of your page content for better context.
+                    </p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fas fa-copy"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">3. Copy & Use</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Select your favorite generated title and copy it to your website's meta tags.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Why Use Our Meta Title Generator?</h2>
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-primary">Key Features</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span>SEO-optimized title suggestions</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span>Character count optimization (50-60 chars)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span>Multiple title variations</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span>Copy-to-clipboard functionality</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                <span>Mobile-responsive design</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-primary">Benefits</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-arrow-up text-blue-500 mt-1"></i>
+                                <span>Improve search engine rankings</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-mouse-pointer text-purple-500 mt-1"></i>
+                                <span>Increase click-through rates</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-clock text-orange-500 mt-1"></i>
+                                <span>Save time on title creation</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-target text-red-500 mt-1"></i>
+                                <span>Better keyword targeting</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-users text-indigo-500 mt-1"></i>
+                                <span>Enhanced user experience</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">What is a meta title?</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        A meta title is an HTML element that specifies the title of a web page. It appears in search engine results as the clickable headline and in browser tabs. It's crucial for SEO and user experience.
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">How long should a meta title be?</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Meta titles should be between 50-60 characters to ensure they display properly in search results without being truncated. Our generator automatically optimizes for this length.
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">What makes a good meta title?</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        A good meta title includes your target keyword, is descriptive and compelling, stays within character limits, accurately represents your page content, and encourages clicks from search results.
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Can I use this tool for free?</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Yes! Our meta title generator is completely free to use with no registration required. Generate unlimited titles for all your web pages and content.
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">How do I implement the generated title?</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Copy your chosen title and add it to your HTML's &lt;head&gt; section using the &lt;title&gt; tag. Most CMS platforms like WordPress have dedicated fields for meta titles in SEO plugins.
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Should I include my brand name in the title?</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Including your brand name can be beneficial for brand recognition, especially for established brands. Our generator gives you options with and without brand names to choose from.
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">How often should I update my meta titles?</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Update meta titles when you refresh content, target new keywords, or notice declining click-through rates. Regular optimization helps maintain and improve search performance.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Tools Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Related SEO Tools and Resources</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="#" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+                    <div class="text-primary text-2xl mb-3">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Meta Description Generator</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Create compelling meta descriptions that boost click-through rates</p>
+                </a>
+                
+                <a href="#" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+                    <div class="text-primary text-2xl mb-3">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Keyword Density Checker</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Analyze keyword density and optimize your content for SEO</p>
+                </a>
+                
+                <a href="#" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+                    <div class="text-primary text-2xl mb-3">
+                        <i class="fas fa-heading"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Heading Tag Analyzer</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Optimize your H1, H2, H3 tags for better SEO structure</p>
+                </a>
+                
+                <a href="#" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+                    <div class="text-primary text-2xl mb-3">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">SEO Content Analyzer</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Comprehensive SEO analysis for your web content</p>
+                </a>
+                
+                <a href="#" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+                    <div class="text-primary text-2xl mb-3">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Schema Markup Generator</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Generate structured data markup for better search visibility</p>
+                </a>
+                
+                <a href="#" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700">
+                    <div class="text-primary text-2xl mb-3">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">SEO Audit Tool</h3>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">Complete SEO audit and recommendations for your website</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Social Sharing -->
+        <section class="text-center mb-12">
+            <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Share This Tool</h3>
+            <div class="flex justify-center gap-4">
+                <button onclick="shareOnTwitter()" class="bg-blue-400 hover:bg-blue-500 text-white px-4 py-2 rounded-lg transition-colors">
+                    <i class="fab fa-twitter mr-2"></i>Twitter
+                </button>
+                <button onclick="shareOnFacebook()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                    <i class="fab fa-facebook mr-2"></i>Facebook
+                </button>
+                <button onclick="shareOnLinkedIn()" class="bg-blue-800 hover:bg-blue-900 text-white px-4 py-2 rounded-lg transition-colors">
+                    <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-gray-600 dark:text-gray-400 mb-4">
+                © 2024 SEO Tools Pro. Free SEO tools for content creators and marketers.
+            </p>
+            <div class="flex justify-center gap-6 text-sm">
+                <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-primary">Privacy Policy</a>
+                <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-primary">Terms of Service</a>
+                <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode functionality
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const htmlElement = document.documentElement;
+        
+        // Check for saved dark mode preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            htmlElement.classList.add('dark');
+        }
+        
+        darkModeToggle.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+            const theme = htmlElement.classList.contains('dark') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+        });
+
+        // Meta title generation functionality
+        const generateBtn = document.getElementById('generateBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const keywordInput = document.getElementById('keyword');
+        const descriptionInput = document.getElementById('description');
+        const brandInput = document.getElementById('brand');
+        const resultsContainer = document.getElementById('results');
+        const usageCounter = document.getElementById('usageCounter');
+
+        // Load usage count from localStorage
+        let usageCount = parseInt(localStorage.getItem('titleGeneratorUsage') || '0');
+        usageCounter.textContent = usageCount;
+
+        // Title templates for generation
+        const titleTemplates = [
+            '{keyword} - {brand}',
+            '{keyword}: Complete Guide {year}',
+            'Best {keyword} - {brand}',
+            '{keyword} Guide: Everything You Need to Know',
+            'Ultimate {keyword} Tips and Tricks',
+            '{keyword} Made Simple - {brand}',
+            'Professional {keyword} Solutions',
+            '{keyword} Expert Guide - {brand}',
+            'Master {keyword} in {year}',
+            '{keyword} Secrets Revealed'
+        ];
+
+        generateBtn.addEventListener('click', generateTitles);
+        clearBtn.addEventListener('click', clearFields);
+        
+        // Generate titles on Enter key press
+        keywordInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') generateTitles();
+        });
+
+        function generateTitles() {
+            const keyword = keywordInput.value.trim();
+            const description = descriptionInput.value.trim();
+            const brand = brandInput.value.trim();
+            
+            if (!keyword) {
+                showError('Please enter a keyword to generate titles.');
+                return;
+            }
+
+            const currentYear = new Date().getFullYear();
+            const titles = [];
+            
+            // Generate titles using templates
+            titleTemplates.forEach(template => {
+                let title = template
+                    .replace('{keyword}', capitalizeFirst(keyword))
+                    .replace('{brand}', brand || 'YourBrand')
+                    .replace('{year}', currentYear);
+                    
+                titles.push(title);
+            });
+
+            // Add description-based titles if description is provided
+            if (description) {
+                titles.push(`${capitalizeFirst(keyword)}: ${capitalizeFirst(description)}`);
+                titles.push(`${capitalizeFirst(description)} - ${brand || 'Expert Guide'}`);
+            }
+
+            displayResults(titles);
+            updateUsageCount();
+        }
+
+        function displayResults(titles) {
+            resultsContainer.innerHTML = '';
+            
+            titles.forEach((title, index) => {
+                const titleDiv = document.createElement('div');
+                titleDiv.className = 'bg-gray-50 dark:bg-gray-700 rounded-lg p-4 border border-gray-200 dark:border-gray-600 fade-in';
+                
+                const charCount = title.length;
+                const charCountClass = charCount <= 60 ? 'text-green-600' : 'text-red-600';
+                
+                titleDiv.innerHTML = `
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Option ${index + 1}</span>
+                        <span class="text-sm ${charCountClass} character-counter">
+                            ${charCount}/60 chars
+                        </span>
+                    </div>
+                    <p class="text-gray-900 dark:text-white font-medium mb-3 leading-relaxed">${title}</p>
+                    <div class="flex gap-2">
+                        <button onclick="copyTitle('${title.replace(/'/g, "\\'")}', this)" 
+                                class="flex-1 bg-primary hover:bg-blue-700 text-white py-2 px-4 rounded text-sm transition-colors">
+                            <i class="fas fa-copy mr-1"></i>Copy Title
+                        </button>
+                        <button onclick="shareTitle('${title.replace(/'/g, "\\'")}', this)" 
+                                class="px-4 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                `;
+                
+                resultsContainer.appendChild(titleDiv);
+            });
+        }
+
+        function copyTitle(title, button) {
+            navigator.clipboard.writeText(title).then(() => {
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check mr-1"></i>Copied!';
+                button.classList.add('bg-green-600', 'hover:bg-green-700');
+                button.classList.remove('bg-primary', 'hover:bg-blue-700');
+                
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.classList.remove('bg-green-600', 'hover:bg-green-700');
+                    button.classList.add('bg-primary', 'hover:bg-blue-700');
+                }, 2000);
+            }).catch(() => {
+                showError('Failed to copy title. Please try again.');
+            });
+        }
+
+        function shareTitle(title, button) {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Generated Meta Title',
+                    text: title,
+                    url: window.location.href
+                });
+            } else {
+                copyTitle(title, button.parentElement.querySelector('button'));
+            }
+        }
+
+        function clearFields() {
+            keywordInput.value = '';
+            descriptionInput.value = '';
+            brandInput.value = '';
+            resultsContainer.innerHTML = `
+                <div class="text-center text-gray-500 dark:text-gray-400 py-8">
+                    <i class="fas fa-lightbulb text-4xl mb-4 text-yellow-500"></i>
+                    <p>Enter your keyword above to generate optimized meta titles</p>
+                </div>
+            `;
+            keywordInput.focus();
+        }
+
+        function showError(message) {
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'bg-red-100 dark:bg-red-900 border border-red-400 dark:border-red-600 text-red-700 dark:text-red-300 px-4 py-3 rounded mb-4 fade-in';
+            errorDiv.innerHTML = `<i class="fas fa-exclamation-triangle mr-2"></i>${message}`;
+            
+            const toolSection = document.getElementById('meta-title-tool');
+            toolSection.insertBefore(errorDiv, toolSection.firstChild);
+            
+            setTimeout(() => {
+                errorDiv.remove();
+            }, 5000);
+        }
+
+        function capitalizeFirst(str) {
+            return str.charAt(0).toUpperCase() + str.slice(1);
+        }
+
+        function updateUsageCount() {
+            usageCount++;
+            usageCounter.textContent = usageCount;
+            localStorage.setItem('titleGeneratorUsage', usageCount.toString());
+        }
+
+        // Social sharing functions
+        function shareOnTwitter() {
+            const text = 'Check out this free Meta Title Generator tool! Perfect for SEO optimization.';
+            const url = window.location.href;
+            window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank');
+        }
+
+        function shareOnFacebook() {
+            const url = window.location.href;
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
+        }
+
+        function shareOnLinkedIn() {
+            const url = window.location.href;
+            const title = 'Meta Title Generator - Free SEO Tool';
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`, '_blank');
+        }
+
+        // Initialize focus on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            keywordInput.focus();
+        });
+
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
